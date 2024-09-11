@@ -36,7 +36,7 @@ cd MSc_Project
 
 2. Install the required dependencies as mentioned above.
 
-3. Run the code for training and testing.
+3. Run the code for training.
 
 ## Raspberry Pi Deployment
 
