@@ -65,16 +65,16 @@ def get_csv_path(csv_output_dir, run, training_time, epoch):
 
 if __name__ == '__main__':
     # parameters
-    train_csv = "/Users/asherfish/Desktop/dataset_new/features/dataset3/train_features.csv"
-    val_csv = "/Users/asherfish/Desktop/dataset_new/features/dataset3/val_features.csv"
+    train_csv = "/path/to/your/train_features.csv"
+    val_csv = "path/to/your/val_features.csv"
     batch_sizes = [16]
     learning_rates = [0.001]
     num_epochs = 1000
     min_epochs = 90  # Minimum epochs before starting early stopping
     patience = 20  # Early stopping patience
-    output_dir = "/Users/asherfish/Desktop/dataset_new/result/dataset3/models"
-    pic_output_dir = '/Users/asherfish/Desktop/dataset_new/result/dataset3/curves/png'
-    csv_output_dir = '/Users/asherfish/Desktop/dataset_new/result/dataset3/curves/csv'
+    output_dir = "/your/output/path"
+    pic_output_dir = '/your/output/path/png'
+    csv_output_dir = '/your/output/path/csv'
 
     # device
     device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
