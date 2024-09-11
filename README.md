@@ -21,8 +21,6 @@ Ensure you have these libraries installed before running the code. You can insta
 pip install torch==2.5.0 numpy==1.23.5 matplotlib==3.7.2
 ```
 
-
-
 ## Dataset
 
 The dataset used in this project contains acoustic recordings for drone detection. It is included in this repository or can be accessed via the provided link (if applicable). The drone sound is downloaded from https://github.com/saraalemadi/DroneAudioDataset. The Scene noise and other types of noise can be downloaded from DCASE.
@@ -40,8 +38,25 @@ cd MSc_Project
 
 3. Run the code for training and testing.
 
-Make sure to update the file paths for the dataset if necessary.
+## Raspberry Pi Deployment
 
+For deployment on a Raspberry Pi 5 (8GB), the following additional libraries are required:
+
+- `torch==2.2.1`  
+- `sounddevice==0.4.7`  
+- `gpiozero==2.0.1`
+
+You can install these libraries using the following command:
+
+```bash
+pip install torch==2.2.1 sounddevice==0.4.7 gpiozero==2.0.1
+```
+
+On the Raspberry Pi, the detection program can be run with:
+
+```bash
+python3 rasp2.py
+```
 ## Contact
 
 For any questions or issues, feel free to contact:
