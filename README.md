@@ -55,7 +55,7 @@ pip install torch==2.2.1 sounddevice==0.4.7 gpiozero==2.0.1
 On the Raspberry Pi, the detection program can be run with:
 
 ```bash
-python3 rasp2.py
+python3 rasp.py
 ```
 ## Contact
 
